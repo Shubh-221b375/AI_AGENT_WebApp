@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Task Agent</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI Task Agent</h1>
+    <textarea id="taskInput" placeholder="Enter a task for the AI agent..."></textarea>
+    <button id="generateBtn">Generate Plan</button>
+
+    <div id="responseContainer">
+      <h2>📋 Generated Plan:</h2>
+      <pre id="planOutput">Waiting for input...</pre>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
